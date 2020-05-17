@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CWheelsAPI</name>
+    </assembly>
+    <members>
+        <member name="M:CWheelsAPI.Controllers.AccountsController.Register(CWheelsAPI.Controllers.Resources.RegisterUserResource)">
+            <summary>
+            Register a new user.
+            </summary>
+            <response code="400">For Bad requests</response>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.AccountsController.Login(CWheelsAPI.Controllers.Resources.LoginUserResource)">
+            <summary>
+            Login a user.
+            </summary>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.AccountsController.ChangePassword(CWheelsAPI.Controllers.Resources.ChangePasswordResource)">
+            <summary>
+            Change password of user.
+            </summary>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.AccountsController.EditUserProfile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Edit user profile.
+            </summary>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.CategoriesController.Get">
+            <summary>
+            Get all categories of vehicles.
+            </summary>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.ImagesController.GetThumbnails(System.Int32)">
+            <summary>
+            returns thumbnails of the images of a vehicle
+            </summary>
+            <returns>Thumbnails of the images added to the vehicle</returns>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.ImagesController.Upload(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Add an image to a vehicle.
+            </summary>
+            <returns>Thumbnail of the image added</returns>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.Post(CWheelsAPI.Controllers.Resources.SaveVehicleResource)">
+            <summary>
+            Creates a new Vehicle.
+            </summary>
+            <response code="200">Successfully creates vehicle</response>
+            <response code="401">For unauthorized requests</response>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.HotAndNewAds">
+            <summary>
+            Gets all hot and new ads.
+            </summary>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.SearchVehicles(System.String)">
+            <summary>
+            Searches vehicle by given search pattern.
+            </summary>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.GetVehicles(System.Int32)">
+            <summary>
+            Gets all vehicles of a given category.
+            </summary>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.UpdateVehicle(System.Int32,CWheelsAPI.Controllers.Resources.SaveVehicleResource)">
+            <summary>
+            Updates a Vehicle.
+            </summary>
+            <response code="200">Successfully updates vehicle</response>
+            <response code="401">For unauthorized requests</response>
+            <response code="404">Vehicle not found</response>
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.DeleteVehicle(System.Int32)">
+            <summary>
+            Deletes a specific vehicle.
+            </summary>
+            <param name="id"></param>  
+            <response code="200">Successfully deletes vehicle</response>
+            <response code="401">For unauthorized requests</response>
+            <response code="404">If vehicle is not found</response> 
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.VehicleDetails(System.Int32)">
+            <summary>
+            Gets a specific vehicle.
+            </summary>
+            <param name="id"></param>  
+            <response code="200">Successfully gets vehicle</response>
+            <response code="404">If vehicle is not found</response> 
+        </member>
+        <member name="M:CWheelsAPI.Controllers.VehiclesController.MyAds">
+            <summary>
+            Gets all ads of logged in user.
+            </summary>
+            <response code="200">Successfully gets ads</response>
+            <response code="401">For unauthorized requests</response>
+        </member>
+    </members>
+</doc>
